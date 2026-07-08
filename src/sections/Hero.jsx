@@ -1,110 +1,157 @@
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Hero() {
   return (
-    <section className="min-h-screen flex items-center bg-slate-950 relative overflow-hidden">
+    <section className="relative min-h-screen flex items-center bg-slate-950 overflow-hidden">
 
       {/* Background Glow */}
+      <div className="absolute top-24 right-24 w-[500px] h-[500px] bg-cyan-500/20 blur-[140px] rounded-full"></div>
 
-      <div className="absolute right-20 top-40 w-96 h-96 bg-cyan-500/20 blur-[120px] rounded-full"></div>
+      <div className="max-w-7xl mx-auto px-8 py-24 grid lg:grid-cols-2 gap-16 items-center">
 
-      <div className="max-w-7xl mx-auto px-8 w-full grid lg:grid-cols-2 gap-20 items-center">
+        {/* LEFT SIDE */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
 
-        {/* LEFT */}
+          {/* Badge */}
+          <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-slate-900 border border-cyan-500/30 mb-8">
 
-        <div>
+            <span className="w-3 h-3 bg-cyan-400 rounded-full animate-pulse"></span>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: .6 }}
-            className="text-cyan-400 font-semibold mb-4"
-          >
-            Hello, I'm
-          </motion.p>
+            <p className="text-cyan-400 text-sm font-medium">
+              Available for Opportunities
+            </p>
 
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: .2 }}
-            className="text-6xl lg:text-8xl font-black leading-tight"
-          >
+          </div>
+
+          {/* Heading */}
+
+          <h1 className="text-6xl lg:text-7xl font-extrabold leading-tight">
+
             Muhammad{" "}
+
             <span className="text-cyan-400">
               Anees
             </span>
-          </motion.h1>
 
-          <motion.h2
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: .4 }}
-            className="mt-6 text-3xl text-gray-300"
-          >
+          </h1>
+
+          {/* Subtitle */}
+
+          <h2 className="mt-6 text-3xl text-gray-300 font-medium">
             Computer Science Student
-          </motion.h2>
+          </h2>
 
-          <motion.h3
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: .6 }}
-            className="mt-2 text-xl text-cyan-400"
-          >
+          <p className="mt-3 text-xl text-cyan-400">
             AI Engineer • Full Stack Developer
-          </motion.h3>
+          </p>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: .8 }}
-            className="mt-8 text-gray-400 leading-9 text-lg max-w-xl"
-          >
+          {/* Description */}
+
+          <p className="mt-8 max-w-xl text-lg text-gray-400 leading-9">
+
             I design and build intelligent software, AI-powered
-            applications, and modern web experiences that solve
-            real-world problems through clean code and thoughtful
-            engineering.
-          </motion.p>
+            applications, and modern web experiences focused on
+            performance, usability, and solving real-world problems.
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-            className="mt-12 flex gap-5 flex-wrap"
-          >
+          </p>
 
-            <button className="bg-cyan-500 hover:bg-cyan-400 hover:scale-105 duration-300 px-8 py-4 rounded-xl font-semibold shadow-lg shadow-cyan-500/20">
+          {/* Buttons */}
 
+          <div className="flex flex-wrap gap-5 mt-10">
+
+            <button
+              className="px-8 py-4 bg-cyan-500 rounded-xl font-semibold
+              hover:bg-cyan-400 hover:-translate-y-1
+              transition-all duration-300 shadow-lg shadow-cyan-500/30"
+            >
               View Projects →
-
             </button>
 
-            <button className="border border-cyan-500 hover:bg-cyan-500 hover:scale-105 duration-300 px-8 py-4 rounded-xl font-semibold">
-
-              Download Resume
-
+            <button
+              className="px-8 py-4 border border-cyan-500 rounded-xl font-semibold
+              hover:bg-cyan-500 hover:-translate-y-1
+              transition-all duration-300"
+            >
+              Download Resume ↓
             </button>
 
-          </motion.div>
+          </div>
 
-        </div>
+          {/* Social Icons */}
 
-        {/* RIGHT */}
+          <div className="flex gap-6 mt-10 text-2xl">
+
+            <a
+              href="#"
+              className="hover:text-cyan-400 transition duration-300"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+              href="#"
+              className="hover:text-cyan-400 transition duration-300"
+            >
+              <FaLinkedin />
+            </a>
+
+            <a
+              href="#"
+              className="hover:text-cyan-400 transition duration-300"
+            >
+              <FaEnvelope />
+            </a>
+
+          </div>
+
+          {/* Stats */}
+
+          <div className="flex gap-16 mt-16">
+
+            <div>
+              <h2 className="text-4xl font-bold text-cyan-400">12+</h2>
+              <p className="text-gray-400 mt-2">Projects</p>
+            </div>
+
+            <div>
+              <h2 className="text-4xl font-bold text-cyan-400">10+</h2>
+              <p className="text-gray-400 mt-2">Technologies</p>
+            </div>
+
+            <div>
+              <h2 className="text-4xl font-bold text-cyan-400">2+</h2>
+              <p className="text-gray-400 mt-2">Certificates</p>
+            </div>
+
+          </div>
+
+        </motion.div>
+
+        {/* RIGHT SIDE */}
 
         <motion.div
           initial={{ opacity: 0, scale: .8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: .5 }}
+          transition={{ duration: .8 }}
           className="flex justify-center"
         >
 
           <div className="relative">
 
-            <div className="absolute inset-0 bg-cyan-400 blur-3xl opacity-30 rounded-full"></div>
+            <div className="absolute inset-0 rounded-full bg-cyan-400 blur-3xl opacity-25"></div>
 
-            <div className="relative w-96 h-96 rounded-full border-4 border-cyan-400 bg-slate-800 flex items-center justify-center text-gray-500 text-xl">
-
-              Your Photo
-
+            <div
+              className="relative w-[420px] h-[420px]
+              rounded-full border-4 border-cyan-400
+              bg-slate-800 flex items-center justify-center
+              text-7xl font-bold text-cyan-400"
+            >
+              MA
             </div>
 
           </div>
