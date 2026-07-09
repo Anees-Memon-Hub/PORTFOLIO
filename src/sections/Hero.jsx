@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { FiChevronDown } from "react-icons/fi";
+import profile from "../data/Profile";
 
 /* ---------------------------------------------------------
    Design notes
@@ -160,8 +161,9 @@ function scrollToProjects(e) {
 
 function downloadResume() {
   const link = document.createElement("a");
-  // Update this path to wherever your resume actually lives, e.g. a file
-  // dropped in your Vite/CRA "public" folder as public/resume.pdf
+  // profile.js currently has no resume field — add one, e.g.
+  //   resume: "/resume.pdf"
+  // then swap this line to: link.href = profile.resume;
   link.href = "/resume.pdf";
   link.download = "Muhammad_Anees_Resume.pdf";
   document.body.appendChild(link);
@@ -327,21 +329,25 @@ function Hero() {
           {/* Social Icons */}
           <div className="flex gap-5 mt-10 text-neutral-400">
             <a
-              href="#"
+              href={profile.github}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="GitHub"
               className="p-2 rounded-lg hover:text-violet-300 hover:bg-neutral-900 transition-colors duration-200"
             >
               <FaGithub size={22} />
             </a>
             <a
-              href="#"
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="p-2 rounded-lg hover:text-violet-300 hover:bg-neutral-900 transition-colors duration-200"
             >
               <FaLinkedin size={22} />
             </a>
             <a
-              href="#"
+              href={profile.email}
               aria-label="Email"
               className="p-2 rounded-lg hover:text-violet-300 hover:bg-neutral-900 transition-colors duration-200"
             >
