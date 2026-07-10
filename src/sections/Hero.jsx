@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { FiChevronDown } from "react-icons/fi";
-import profile from "../data/Profile";
+import profile from "../data/profile";
 
 /* ---------------------------------------------------------
    Design notes

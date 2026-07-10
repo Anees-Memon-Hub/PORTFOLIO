@@ -4,4 +4,4 @@ const profile = {
   email: "mailto:memonanees277@gmail.com",
 };
 
-export default profile;
+export default profile; 
