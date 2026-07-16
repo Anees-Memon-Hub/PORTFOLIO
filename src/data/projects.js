@@ -16,10 +16,10 @@ export const projects = [
     demo: "#",
   },
   {
-    title: "Portfolio Website",
+    title: "Extractly",
     description:
-      "A modern responsive portfolio built with React, Tailwind CSS, Framer Motion, and deployed on Vercel.",
-    tech: ["React", "Tailwind", "Framer Motion"],
+      "A browser extension that extracts and organizes key information from web pages in one click, streamlining research and data collection.",
+    tech: ["JavaScript", "Chrome Extension API", "HTML/CSS"],
     github: "#",
     demo: "#",
   },
