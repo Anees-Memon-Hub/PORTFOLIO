@@ -23,17 +23,28 @@ function Contact() {
 
         <div className="flex justify-center gap-8 text-3xl mt-14">
 
-          <a href="#">
-            <FaGithub className="hover:text-cyan-400 transition"/>
-          </a>
+         ```jsx
+<a
+  href="https://github.com/Anees-Memon-Hub"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaGithub className="hover:text-cyan-400 transition" />
+</a>
 
-          <a href="#">
-            <FaLinkedin className="hover:text-cyan-400 transition"/>
-          </a>
+<a
+  href="https://www.linkedin.com/in/muhammad-anees-memon-1638b4325/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaLinkedin className="hover:text-cyan-400 transition" />
+</a>
 
-          <a href="mailto:your@email.com">
-            <FaEnvelope className="hover:text-cyan-400 transition"/>
-          </a>
+<a href="mailto:memonanees277@gmail.com">
+  <FaEnvelope className="hover:text-cyan-400 transition" />
+</a>
+```
+
 
         </div>
 
