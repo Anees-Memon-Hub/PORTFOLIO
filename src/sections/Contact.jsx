@@ -23,7 +23,7 @@ function Contact() {
 
         <div className="flex justify-center gap-8 text-3xl mt-14">
 
-         ```jsx
+         
 <a
   href="https://github.com/Anees-Memon-Hub"
   target="_blank"
@@ -43,7 +43,7 @@ function Contact() {
 <a href="mailto:memonanees277@gmail.com">
   <FaEnvelope className="hover:text-cyan-400 transition" />
 </a>
-```
+
 
 
         </div>
