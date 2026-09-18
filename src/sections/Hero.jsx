@@ -359,7 +359,7 @@ function Hero() {
           <div className="flex flex-wrap gap-x-10 gap-y-4 mt-16 font-mono text-sm">
             <div>
               <span className="text-neutral-500">projects:</span>{" "}
-              <span className="text-2xl font-display font-semibold text-violet-300">12+</span>
+              <span className="text-2xl font-display font-semibold text-violet-300">13+</span>
             </div>
             <div>
               <span className="text-neutral-500">stack_size:</span>{" "}
@@ -367,7 +367,7 @@ function Hero() {
             </div>
             <div>
               <span className="text-neutral-500">certs:</span>{" "}
-              <span className="text-2xl font-display font-semibold text-violet-300">2+</span>
+              <span className="text-2xl font-display font-semibold text-violet-300">4+</span>
             </div>
           </div>
         </div>
