@@ -21,7 +21,7 @@ export const skills = [
   },
   {
     name: "React",
-    level: 88,
+    level: 80,
     description: "Frontend Development"
   },
   {
